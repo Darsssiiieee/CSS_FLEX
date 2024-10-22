@@ -8,12 +8,12 @@ CSS Flex have different properties that can be used to control the layout of the
     - **row (default)**: left to right in ltr; right to left in rtl
     - **row-reverse**: right to left in ltr; left to right in rtl
     - **column**: same as row but top to bottom
-     - **column-reverse**: same as row-reverse but bottom to top
-* flex-wrap:By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
-     - **nowrap (default)**: all flex items will be on one line
-     - **wrap**: flex items will wrap onto multiple lines, from top to bottom.
+    - **column-reverse**: same as row-reverse but bottom to top
+* flex-wrap: By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+    - **nowrap (default)**: all flex items will be on one line
+    - **wrap**: flex items will wrap onto multiple lines, from top to bottom.
     - **wrap-reverse**: flex items will wrap onto multiple lines from bottom to top.
--   **flex-flow**: This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.
+* flex-flow: This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.
 * justify-content: This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
     - **flex-start (default)**: items are packed toward the start of the flex-direction.
     - **flex-end**: items are packed toward the end of the flex-direction.
@@ -40,9 +40,9 @@ CSS Flex have different properties that can be used to control the layout of the
     - **space-around**: items evenly distributed with equal space around each line
     - **space-evenly**: items are evenly distributed with equal space around them
     - **stretch**: lines stretch to take up the remaining space
--   **order**: By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
--   **flex-grow**: This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
-If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, that child would take up twice as much of the space as either one of the others (or it will try, at least).
--   **flex-shrink**: This defines the ability for a flex item to shrink if necessary.
--   **flex-basis**: This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property” (which was temporarily done by the main-size keyword until deprecated). The content keyword means “size it based on the item’s content” – this keyword isn’t well supported yet, so it’s hard to test and harder to know what its brethren max-content, min-content, and fit-content do.
--   **flex**: This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. The default is 0 1 auto, but if you set it with a single number value, like flex: 5;, that changes the flex-basis to 0%, so it’s like setting flex-grow: 5; flex-shrink: 1; flex-basis: 0%;.
+* order: By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
+* flex-grow: This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up. If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, that child would take up twice as much of the space as either one of the others (or it will try, at least).
+* flex-shrink: This defines the ability for a flex item to shrink if necessary.
+* flex-basis: This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property” (which was temporarily done by the main-size keyword until deprecated). The content keyword means “size it based on the item’s content” – this keyword isn’t well supported yet, so it’s hard to test and harder to know what its brethren max-content, min-content, and fit-content do.
+* flex: This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. The default is 0 1 auto, but if you set it with a single number value, like flex: 5;, that changes the flex-basis to 0%, so it’s like setting flex-grow: 5; flex-shrink: 1; flex-basis: 0%;.
+* align-self: This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
